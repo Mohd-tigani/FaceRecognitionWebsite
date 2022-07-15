@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Camera
+{% endblock %}
+
+{% block main %}
+<!--https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp-->
+<body>
+    <h1>Photo</h1>
+    <p> adjust yourself until you see a bounding box</p>
+    <div class='container'>
+        <img src="{{url_for('video_feed')}}" wdith="50%"/>
+    </div>
+    <form action="{{ url_for('photo') }}" method="post">
+            <input type="submit" value="Take_photo" name="photo"/>
+    </form>
+    <p>Instructions: if your wearing any face accessories such as glasses. please remove them for the bounding box to appear</p>
+    {%if message %}
+    <div class="alert alert-success">
+    <p> {{message}}</p>
+    </div>
+    {%endif%}
+</body>
+{% endblock %}

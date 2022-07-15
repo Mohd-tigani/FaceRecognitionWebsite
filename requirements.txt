@@ -1,0 +1,17 @@
+Python version 3.7 or higher
+Python packages required:
+face_recognition
+flask
+cv2
+os
+base64
+Image
+io 
+sys
+flask_mysqldb
+
+Xampp control panel application for mysql php
+https://www.apachefriends.org/download.html
+If using visual studio, must modify to install Desktop development C++ for face_recognition package to work
+
+
